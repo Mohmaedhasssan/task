@@ -1,0 +1,17 @@
+{
+  "name": "batnouni",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "demo.js",
+  "scripts": {
+    "start": "nodemon demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
