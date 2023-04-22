@@ -17,9 +17,9 @@ jobs:
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_TOKEN}}
 
-    - name: Build and push to Docker Hub
-      uses: docker/build-push-action@v2
-      with:
-        context: .
-        push: true
-        tags: mohamedhassan5/task1:latest, mohamedhassan5/task1:${{ github.run_number }}
+    - name: Build  to Docker Hub
+      run: docker build -t ${{secrets.DOCKER_USERNAME}}/task1
+      
+    - name: Push  to Docker Hub
+      run: docker push  ${{secrets.DOCKER_USERNAME}}/task1
+    
